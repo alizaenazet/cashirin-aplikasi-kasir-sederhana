@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="1024.0" prefWidth="1440.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.finalalp.HomeScreen">
+   <children>
+      <VBox prefHeight="1024.0" prefWidth="187.0" style="-fx-background-color: FFFFFF;">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="CASHIRIN" wrappingWidth="100.71299743652344">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="30.0" top="35.0" />
+               </VBox.margin>
+            </Text>
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#switchToListProduk" prefHeight="63.0" prefWidth="63.0" text="Button">
+               <VBox.margin>
+                  <Insets left="50.0" top="120.0" />
+               </VBox.margin>
+            </Button>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="List Produk" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets left="45.0" top="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Button layoutX="40.0" layoutY="250.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="63.0" prefWidth="63.0" text="Button">
+               <VBox.margin>
+                  <Insets left="50.0" top="40.0" />
+               </VBox.margin>
+            </Button>
+            <Text layoutX="35.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Riwayat transaksi" textAlignment="CENTER" wrappingWidth="73.93489837646484">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="45.0" top="5.0" />
+               </VBox.margin>
+            </Text>
+            <HBox prefHeight="102.0" prefWidth="187.0">
+               <VBox.margin>
+                  <Insets top="425.0" />
+               </VBox.margin>
+               <children>
+                  <VBox prefHeight="68.0" prefWidth="194.0">
+                     <children>
+                        <Button maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="65.0" prefWidth="65.0" text="Button">
+                           <VBox.margin>
+                              <Insets left="60.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="SELESAIKAN" wrappingWidth="85.7586784362793">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="53.0" top="3.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox layoutX="187.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1024.0" prefWidth="798.0" spacing="15.0" style="-fx-background-color: F6F1FF;">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Kategori">
+               <font>
+                  <Font size="32.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="25.0" top="50.0" />
+               </VBox.margin>
+            </Text>
+            <ChoiceBox fx:id="listKategoriProduk" prefHeight="40.0" prefWidth="300.0">
+               <VBox.margin>
+                  <Insets left="25.0" />
+               </VBox.margin>
+            </ChoiceBox>
+            <TextField fx:id="searchbarProduk" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="300.0">
+               <padding>
+                  <Insets left="30.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="25.0" />
+               </VBox.margin>
+            </TextField>
+            <Text layoutX="35.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Produk">
+               <font>
+                  <Font size="32.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="25.0" top="35.0" />
+               </VBox.margin>
+            </Text>
+            <TableView fx:id="tableProduk" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="759.0" prefWidth="776.0">
+               <columns>
+                  <TableColumn prefWidth="219.20315551757812" text="Nama" />
+                  <TableColumn prefWidth="178.29684448242188" text="Harga" />
+                  <TableColumn prefWidth="269.155517578125" text="Deskripsi" />
+                  <TableColumn prefWidth="108.344482421875" text="Kategori" />
+               </columns>
+               <VBox.margin>
+                  <Insets left="15.0" />
+               </VBox.margin>
+            </TableView>
+         </children>
+      </VBox>
+      <VBox layoutX="978.0" prefHeight="1024.0" prefWidth="438.0" style="-fx-background-color: FFFFFF;">
+         <children>
+            <HBox prefHeight="16.0" prefWidth="438.0">
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+               <children>
+                  <Button maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="21.0" prefWidth="68.0" text="Cancel">
+                     <HBox.margin>
+                        <Insets left="20.0" right="29.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button layoutX="30.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="21.0" prefWidth="68.0" text="Reset" />
+               </children>
+            </HBox>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nama pesanan">
+               <VBox.margin>
+                  <Insets left="20.0" top="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <TextField fx:id="NamaPemesan" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="40.0" prefWidth="402.0" promptText="Masukan Nama">
+               <VBox.margin>
+                  <Insets left="20.0" top="5.0" />
+               </VBox.margin>
+            </TextField>
+            <Text layoutX="30.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tambah pesanan">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin>
+            </Text>
+            <ChoiceBox fx:id="listProdukAdded" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="35.0" prefWidth="400.0">
+               <VBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </VBox.margin>
+            </ChoiceBox>
+            <HBox prefHeight="42.0" prefWidth="200.0">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <children>
+                  <TextField fx:id="jumlahProduk" prefHeight="40.0" prefWidth="63.0" promptText="QTY">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Button fx:id="addProduk" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="40.0" prefWidth="70.0" text="Tambah">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="26.0" prefWidth="438.0" spacing="10.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pesanan">
+                     <font>
+                        <Font size="32.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Text>
+                  <TextField fx:id="jumlahPajak" prefHeight="36.0" prefWidth="70.0" promptText="Tax %">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="200.0" top="5.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <TableView fx:id="tablePesanan" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="580.0" prefWidth="440.0">
+               <columns>
+                  <TableColumn prefWidth="40.0" text="No" />
+                  <TableColumn prefWidth="238.0" text="Nama" />
+                  <TableColumn prefWidth="115.0" text="Harga" />
+                  <TableColumn prefWidth="53.0" text="QTY" />
+               </columns>
+               <VBox.margin>
+                  <Insets left="7.0" />
+               </VBox.margin>
+            </TableView>
+            <HBox prefHeight="19.0" prefWidth="456.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Sub total">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="15.0" prefWidth="80.0" text="1.000.000">
+                     <HBox.margin>
+                        <Insets left="300.0" right="10.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="889.0" prefHeight="15.0" prefWidth="456.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Pajak">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Label prefHeight="17.0" prefWidth="29.0" text="99%">
+                     <HBox.margin>
+                        <Insets left="10.0" top="2.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="15.0" prefWidth="80.0" text="1.000.000">
+                     <HBox.margin>
+                        <Insets left="285.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="908.0" prefHeight="6.0" prefWidth="438.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Total">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="115.0" text="1.000.000">
+                     <HBox.margin>
+                        <Insets left="260.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="42.0" prefWidth="438.0" spacing="50.0">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="Cetak" />
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="100.0" text="Selesai" />
+               </children>
+               <padding>
+                  <Insets left="100.0" right="100.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
